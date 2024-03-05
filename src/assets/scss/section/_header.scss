@@ -2,6 +2,10 @@
 
   border-bottom: 1px solid var(--black200);
 
+  @media (max-width: 800px) {
+    border-bottom: none;
+  } 
+
   a {
 
     display: flex;
@@ -108,6 +112,10 @@
   padding: 15px 0 10px;
   background-color: var(--blackAlpha100);
   backdrop-filter: blur(10px);
+
+  @media (max-width:800px) {
+    display: none;
+  }
 
   li {
     display: inline-block;
