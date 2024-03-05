@@ -2,6 +2,7 @@ import React from 'react'
 
 import Header from './Header'
 import Footer from './Footer'
+import Search from './Search'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const Main = (props) => {
@@ -19,6 +20,7 @@ const Main = (props) => {
 
       <Header />
       <main id='main' role='main'>
+        <Search />
         {props.children}
       </main>
       <Footer />
